@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:knee_rom/page/camera/camera_ctl.dart';
+import 'package:knee_rom/page/camera/camera_page.dart';
 import 'package:knee_rom/page/main/main_page.dart';
 
 void main() {
+  Get.put(CameraCtl());
   runApp(const App());
 }
 
@@ -16,9 +19,10 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: '/camera',
       getPages: [
-        GetPage(name: '/', page: () => const MainPage()),
+        GetPage(name: '/', page: () => MainPage()),
+        GetPage(name: '/camera', page: () => CameraPage()),
       ],
     );
   }

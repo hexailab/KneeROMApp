@@ -43,7 +43,7 @@ android {
 
     defaultConfig {
         applicationId "amin.scx.knee_rom"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21//flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
